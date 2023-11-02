@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #ffffff;
+}
+
+.load {
+    background-color: #000000;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 480px) {
+    .load {
+        width: 300px;
+        height: 300px;
+    }
+    .class {
+        font-size: 12px;
+        margin-left: 50px;
+        margin-right: 50px;
+        text-align: center;
+        margin-top: 29px;
+    }
+    ul li {
+        width: 30px;
+        height: 30px;
+        border-radius: 20%;
+        animation: grow 1.6s ease-in-out infinite;
+    }
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 5px;
+    }
+    
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 5px;
+}
+ul li {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    animation: grow 1.6s ease-in-out infinite;
+}
+@keyframes grow {
+
+    0%,
+    40%,
+    100% {
+        transform: scale(0.2);
+    }
+
+    20% {
+        transform: scale(1);
+    }
+
+}
+@media screen and (max-width: 480px) {
+    @keyframes grow {
+
+        0%,
+        40%,
+        100% {
+            transform: scale(0.2);
+        }
+
+        40% {
+            transform: skewY(20deg);
+        }
+    
+        20% {
+            transform: scale(0.7);
+        }
+    
+    }
+}
+.one {
+    background-color: #ffff00;
+    animation-delay: -1.4s;
+}
+.two {
+    background-color: #76ff03;
+    animation-delay: -1.2s;
+}
+.three {
+    background-color: #f06292;
+    animation-delay: -1s;
+}
+.four {
+    background-color: #4fc3f7;
+    animation-delay: -0.8s;
+}
+.five {
+    background-color: #ba68c8;
+    animation-delay: 0.6s;
+}
+.six {
+    background-color: #f57c00;
+    animation-delay: 0.4s;
+}
+.seven {
+    background-color: #673ab7;
+    animation-delay: 0.2s;
+}
+.class {
+    font-family: cursive;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 50px;
+}
